@@ -48,3 +48,7 @@ const assertObjectsEqual = function(actual, expected) {
       )}`
     );
 };
+
+// const a = { a: 1, b: [2] };
+// const b = { a: 1, b: [2] };
+// assertObjectsEqual(a, b);
