@@ -1,4 +1,4 @@
-const assertEqual = function (actual, expected) {
+const assertEqual = function(actual, expected) {
   let failEmoji = String.fromCodePoint(0x1f6d1);
   let passEmoji = String.fromCodePoint(0x2705);
   actual === expected
@@ -8,7 +8,7 @@ const assertEqual = function (actual, expected) {
 
 // allItems: an array of strings that we need to look through
 // itemsToCount: an object specifying what to count
-const countOnly = function (allItems, itemsToCount) {
+const countOnly = function(allItems, itemsToCount) {
   const results = {};
   for (const items of allItems) {
     if (itemsToCount[items]) {
