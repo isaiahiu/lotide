@@ -15,6 +15,7 @@ const findKeyByValue = function (obj, valu) {
       return keys;
     }
   }
+  return undefined;
   // if no match, return undefined
 };
 
