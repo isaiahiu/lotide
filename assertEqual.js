@@ -1,4 +1,4 @@
-const assertEqual = function(actual, expected) {
+const assertEqual = function (actual, expected) {
   let failEmoji = String.fromCodePoint(0x1f6d1);
   let passEmoji = String.fromCodePoint(0x2705);
   actual === expected
@@ -6,3 +6,4 @@ const assertEqual = function(actual, expected) {
     : console.log(`${failEmoji} Assertion Failed: ${actual} !== ${expected}`);
 };
 
+module.exports = assertEqual;
