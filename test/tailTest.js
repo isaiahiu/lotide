@@ -1,7 +1,9 @@
 const tail = require("../tail.js");
-const assertEqual = require("../assertEqual");
+const assert = require("chai").assert;
 
-const words = ["Yo Yo", "Lighthouse", "Labs"];
-
-tail(words);
-assertEqual(words.length, 3);
+describe("#tail", () => {
+  it("should return true when passing in [`Lighthouse`, `Labs`]", () => {
+    const words = ["Yo Yo", "Lighthouse", "Labs"];
+    assert.deepEqual(tail(words), [`Lighthouse`, `Labs`]);
+  });
+});
